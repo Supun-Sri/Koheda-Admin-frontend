@@ -124,8 +124,8 @@ export default function VendorsPage() {
         
         // ✅ SECURE: Cookie is already set by backend
         // Simply open the vendor dashboard - no token in URL!
-        const vendorUrl = process.env.NEXT_PUBLIC_VENDOR_URL || 'http://localhost:3001';
-        window.open(`${vendorUrl}/dashboard`, '_blank');
+        const vendorUrl = process.env.NEXT_PUBLIC_VENDOR_URL || 'http://localhost:3000';
+        window.open(`${vendorUrl}/vendors/dashboard`, '_blank');
         
         // Show success message
         alert(`Impersonation session started for ${selectedVendor.email}\nOpening vendor dashboard...`);
